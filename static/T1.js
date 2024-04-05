@@ -5,9 +5,11 @@ const initCharts = async () => {
   // Dados reais (substitua pelos seus dados)
   const responseOrigem = await fetch("http://127.0.0.1:5000/api/origem/data");
   const dataOrigem = await responseOrigem.json();
+  console.log(dataOrigem);
 
   const responseDestino = await fetch("http://127.0.0.1:5000/api/destino/data");
   const dataDestino = await responseDestino.json();
+  console.log(dataDestino);
 
   const opcoesChart1 = {
     xAxis: {
